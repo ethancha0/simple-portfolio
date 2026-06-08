@@ -1,4 +1,5 @@
 import TextType from "./animations/TextType";
+import DecryptAscii from "./animations/DecryptAscii";
 import { BONSAI_ART } from "./bonsai-art";
 
 export default function Body(){
@@ -30,7 +31,10 @@ export default function Body(){
             </div>
 
             <div>
-                <pre className="overflow-x-auto whitespace-pre font-[ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace] text-[9px] leading-[1]">{BONSAI_ART}</pre>
+                <DecryptAscii
+                    text={BONSAI_ART}
+                    className="overflow-x-auto whitespace-pre font-[ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace] text-[9px] leading-none"
+                />
             </div>
 
 
