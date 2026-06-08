@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Grainient from "@/components/background";
+import MuiProvider from "@/components/mui-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,9 +21,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Grainient
           className="fixed inset-0 -z-10"
-          color1="#524242"
-          color2="#5f5c6b"
-          color3="#B497CF"
+          color1="#372d36"
+          color2="#060606"
+          color3="#134314"
           timeSpeed={0.25}
           colorBalance={0}
           warpStrength={1}
@@ -43,9 +44,11 @@ export default function RootLayout({
           centerY={0}
           zoom={0.9}
         />
-        <div className="relative z-10 flex min-h-full flex-1 flex-col">
-          {children}
-        </div>
+        <MuiProvider>
+          <div className="relative z-10 flex min-h-full flex-1 flex-col">
+            {children}
+          </div>
+        </MuiProvider>
       </body>
     </html>
   );

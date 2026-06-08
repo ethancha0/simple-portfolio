@@ -1,5 +1,6 @@
 import TextType from "./animations/TextType";
 import DecryptAscii from "./animations/DecryptAscii";
+import IntroText from "./intro-text";
 import { BONSAI_ART } from "./bonsai-art";
 
 export default function Body(){
@@ -20,13 +21,7 @@ export default function Body(){
                 />
 
                 <div className="max-w-80">
-                
-                    <p className="text-2xl">
-                        Currently leading a team to build <a href="https://zotmeet.com/" target="_blank" className="underline">ZotMeet</a> for 
-                        UC Irvine students. There, I also study Software Engineering & Health Infomatics
-                    </p>
-
-
+                    <IntroText />
                 </div>
             </div>
 
