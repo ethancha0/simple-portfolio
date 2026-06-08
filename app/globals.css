@@ -122,10 +122,26 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+
   html {
     @apply font-sans;
   }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  cursor:
+    url("/cursor/pointinghand.png") 24 16,
+    url("/cursor/pointinghand.svg") 24 16,
+    auto;
+}
+
+a[href] {
+  cursor:
+    url("/cursor/openhand.png") 32 16,
+    url("/cursor/openhand.svg") 32 16,
+    pointer;
 }

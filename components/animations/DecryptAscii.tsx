@@ -100,7 +100,6 @@ export default function DecryptAscii({
     cancelAnimation();
     if (preRef.current) {
       preRef.current.textContent = text;
-      preRef.current.style.cursor = 'default';
     }
   }, [cancelAnimation, text]);
 
@@ -197,7 +196,6 @@ export default function DecryptAscii({
 
       mouseRef.current = { row, col };
       isHoveringRef.current = true;
-      preRef.current.style.cursor = 'crosshair';
       startLoop();
     },
     [resetEffect, startLoop]
@@ -213,7 +211,6 @@ export default function DecryptAscii({
     scrambleStartRef.current.clear();
     if (preRef.current) {
       preRef.current.textContent = text;
-      preRef.current.style.cursor = 'default';
     }
   }, [text]);
 
