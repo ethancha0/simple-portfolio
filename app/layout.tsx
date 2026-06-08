@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Background from "./components/background/background";
+import Grainient from "@/components/background";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
       className="h-full antialiased"
     >
       <body className="min-h-full flex flex-col">
-        <Background
+        <Grainient
           className="fixed inset-0 -z-10"
           color1="#524242"
           color2="#5f5c6b"
