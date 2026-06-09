@@ -8,12 +8,13 @@ interface CardProps{
 
 dateString: string,
 title: string,
+description: string,
 image: string,
 link: string,
 }
 
 
-export default function Card({dateString, title, image, link}: CardProps){
+export default function Card({dateString, title, description, image, link}: CardProps){
 
     return(
         <div className="flex items-center gap-20">
@@ -22,19 +23,20 @@ export default function Card({dateString, title, image, link}: CardProps){
                 <Typography color="textSecondary">{dateString}</Typography>
 
                 <Typography variant="h5">{title}</Typography>
+                <Typography color="textSecondary">{description}</Typography>
             </div>
 
             <Link
                 href={link}
-                className="group block"
+                className="group block ml-auto"
                 target="_blank"
             >
                 <Image
                     src={image}
                     alt="icssc"
-                    width={400}
-                    height={100}
-                    className="transition-[filter] duration-200 group-hover:brightness-75"
+                    width={250}
+                    height={75}
+                    className="transition-[filter] ml-auto duration-200 group-hover:brightness-75"
                 />
             </Link>
             
