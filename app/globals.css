@@ -140,7 +140,6 @@ html {
 }
 
 a[href] {
-  color: inherit;
   cursor:
     url("/cursor/openhand.png") 32 16,
     url("/cursor/openhand.svg") 32 16,
@@ -148,6 +147,10 @@ a[href] {
   transition: color 150ms ease;
 }
 
-a[href]:hover {
+a[href]:not([class*="MuiLink-root"]) {
+  color: inherit;
+}
+
+a[href]:not([class*="MuiLink-root"]):hover {
   color: #4ade80;
 }
