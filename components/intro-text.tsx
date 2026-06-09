@@ -1,10 +1,11 @@
 'use client';
 
 import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
 
 export default function IntroText() {
   return (
-    <p className="text-2xl">
+    <Typography variant="h6">
       Currently leading a team to build{' '}
       <Tooltip title="Time Sync & Room Scheduler" arrow>
         <a
@@ -18,6 +19,6 @@ export default function IntroText() {
       </Tooltip>{' '}
       for UC Irvine students. There, I also study Software Engineering & Health
       Infomatics
-    </p>
+    </Typography>
   );
 }

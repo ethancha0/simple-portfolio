@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Grainient from "@/components/background";
 import MuiProvider from "@/components/mui-provider";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Ethan Chao",
@@ -45,11 +46,19 @@ export default function RootLayout({
           zoom={0.9}
         />
         <MuiProvider>
-          <div className="relative z-10 flex min-h-full flex-1 flex-col">
+          <div className="flex items-center justify-center gap-10">
+            <Navbar/>
             {children}
+            
           </div>
         </MuiProvider>
+
+    
+
+        
+
       </body>
+
     </html>
   );
 }
